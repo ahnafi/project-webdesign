@@ -1,0 +1,26 @@
+/* * {
+    border: 1px solid white;
+} */
+
+#hero {
+    background: rgb(33,37,41);
+    background: linear-gradient(313deg, rgba(33,37,41,0.9136904761904762) 0%, rgba(33,37,41,0.9024859943977591) 41%, rgba(33,37,41,1) 68%, rgba(33,37,41,1) 100%);
+}
+
+#lamp {
+    max-width: 30%;
+}
+
+#howItWork {
+    background: url('../img/smartphone-home.jpg') center no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+#text-howItWork {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(84, 90, 99) 100%);
+    min-height: 50vh;
+}
+
+/* <!-- AEB9CC --> */

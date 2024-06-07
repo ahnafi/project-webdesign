@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>my Home</title>
+  </head>
+  <body class="bg-dark">
+    <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
+        <div class="container px-4">
+          <a class="navbar-brand fw-bold" href="#">Astro Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto gap-2 my-2 my-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-body-dark" href="#"
+                  ><i class="fa-solid fa-home"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold text-body-dark active"
+                  aria-current="page"
+                  href="#Info-Gempa"
+                  id="link-gempa"
+                  >Info-Gempa</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link fw-bold text-body-dark active"
+                  aria-current="page"
+                  href="/"
+                  >Log Out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- main -->
+    <main class="">
+      <div class="container">
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-6">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/src/img/home.jpg"
+                    class="d-block w-100 rounded"
+                    alt="monitoring home"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/src/img/room-1.jpg"
+                    class="d-block w-100 rounded"
+                    alt="monitoring dinning room"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/src/img/kitchen.jpg"
+                    class="d-block w-100 rounded"
+                    alt="study room"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleFade"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row py-3 d-flex justify-content-center align-items-center">
+          <div class="col-12 col-md-9">
+            <div class="row d-flex justify-content-center py-3 px-3">
+              <div
+                class="col-12 col-md-12 bg-body-tertiary px-2 py-2 rounded d-flex align-items-center gap-2 justify-content-around"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-temperature-low fs-3"> </i>
+                  <span id="temperature" class="fs-5"></span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-clock fs-3"> </i>
+                  <span id="clock" class="fs-5"></span>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-calendar-days fs-3"> </i>
+                  <span id="calendar" class="fs-5"></span>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="row d-flex flex-wrap justify-content-center g-2 px-">
+              <!-- loop -->
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-1">Lampu Ruang Tamu</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-1"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-2">Lampu Dapur</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-2"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-3">TV</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-3"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-4">AC</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-4"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-5">Kipas Angin</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-5"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div
+                  class="form-check form-switch d-flex justify-content-between mx-1 bg-body-tertiary py-2 px-3 rounded shadow-sm"
+                >
+                  <label for="btn-6">Lampu Kamar</label>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="btn-6"
+                  />
+                </div>
+              </div>
+
+              <!-- end loop -->
+            </div>
+          </div>
+        </div>
+        <div
+          class="row d-flex justify-content-center text-white my-5"
+          id="Info-Gempa"
+        >
+          <div class="col-12 col-md-6 d-none" id="gempa">
+            <h2>BMKG info gempa</h2>
+            <div class="card">
+              <img src="" class="card-img-top" alt="bmkg shake map" />
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer class="container-fluid text-white my-3 py-3 bg-dark">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          Copyright &copy; Atik Ahnafi Sulthon
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="../src/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const jam = document.getElementById("clock");
+        const suhu = document.getElementById("temperature");
+        const tanggal = document.getElementById("calendar");
+        let now = new Date();
+        jam.innerHTML += ` ${now.getHours()} : ${now.getMinutes()}`;
+        tanggal.innerHTML += ` ${now.toDateString()}`;
+
+        const url =
+          "https://data.bmkg.go.id/DataMKG/MEWS/DigitalForecast/DigitalForecast-JawaTengah.xml";
+
+        fetch(url)
+          .then((res) => res.text())
+          .then((data) => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+
+            // Mengakses elemen untuk kota Purbalingga secara langsung
+            const purbalinggaElement = xmlDoc.querySelector(
+              'area[description="Purbalingga"]'
+            );
+
+            // Mengakses elemen <parameter id="t"> untuk Purbalingga
+            const parameterElement =
+              purbalinggaElement.querySelector('parameter[id="t"]');
+            const timerangeElements =
+              parameterElement.getElementsByTagName("timerange");
+
+            let currentTemp = "N/A";
+            let currentHour = now.getHours();
+
+            for (let timerange of timerangeElements) {
+              let datetime = timerange.getAttribute("datetime");
+              let hour = parseInt(datetime.substring(8, 10)); // Mengambil jam dari datetime
+
+              if (
+                currentHour === hour ||
+                (currentHour < hour && currentHour + 6 >= hour)
+              ) {
+                currentTemp =
+                  timerange.querySelector('value[unit="C"]').textContent;
+                break;
+              }
+            }
+
+            suhu.innerHTML = ` ${currentTemp}°C`;
+          })
+          .catch((error) => {
+            console.error("Error fetching XML:", error);
+            suhu.innerHTML = "?°C";
+          });
+      });
+
+      // info gempa
+      const infoGempa = document.getElementById("link-gempa");
+      infoGempa.addEventListener("click", () => {
+        const gempa = document.getElementById("gempa");
+        gempa.classList.remove("d-none");
+
+        fetch("https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json")
+          .then((data) => data.json())
+          .then((res) => {
+            const data = res.Infogempa.gempa;
+            console.log(data);
+
+            const img = gempa.querySelector(".card-img-top");
+            img.src = "https://data.bmkg.go.id/DataMKG/TEWS/" + data.Shakemap;
+
+            const title = gempa.querySelector(".card-title");
+            title.innerHTML = "Info Gempa Terbaru di " + data.Dirasakan;
+
+            const text = gempa.querySelector(".card-text");
+            text.innerHTML = `Pada tanggal ${data.Tanggal} pukul ${data.Jam}, terjadi gempa dengan kedalaman ${data.Kedalaman} , magnitude ${data.Magnitude} di Wilayah ${data.Wilayah} , ${data.Dirasakan}. ${data.Potensi}`;
+          });
+      });
+    </script>
+  </body>
+</html>

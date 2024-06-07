@@ -23,4 +23,11 @@
     min-height: 50vh;
 }
 
+@media (max-width: 768px){
+    #text-howItWork {
+        background: rgb(255,255,255);
+        background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgb(84, 90, 99) 100%);
+        min-height: 50vh;
+    }
+}
 /* <!-- AEB9CC --> */

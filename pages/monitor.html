@@ -53,7 +53,7 @@
                 <a
                   class="nav-link fw-bold text-body-dark active"
                   aria-current="page"
-                  href="/"
+                  href="../index.html"
                   >Log Out</a
                 >
               </li>
@@ -69,7 +69,7 @@
       <div class="container">
         <div class="row justify-content-center mt-3">
           <div class="col-12 col-md-6">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div id="carouselExampleFade" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
@@ -289,7 +289,7 @@
             const timerangeElements =
               parameterElement.getElementsByTagName("timerange");
 
-            let currentTemp = "N/A";
+            let currentTemp = "?";
             let currentHour = now.getHours();
 
             for (let timerange of timerangeElements) {
